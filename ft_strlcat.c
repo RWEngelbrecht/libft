@@ -1,10 +1,39 @@
 #include "libft.h"
 
-size_t	char *dst, const char *src, size_t dstsize)
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	dst = (char *)malloc(sizeof(char) * (dstsize - ft_strlen(dst) - 1));
+	size_t	i;
+	size_t	j;
+	size_t	d_len;
+	size_t	s_len;
 
-	if (*dst < dstsize || dstsize == 0)
-		return (NULL);
-	
+	i = ft_strlen(dst);
+	j = 0;
+	d_len = ft_strlen(dst);
+	s_len = ft_strlen(src);
+	if (size < d_len + 1)
+		return (s_len + size);
+	if (size > d_len + 1)
+	{
+		while (i < size - 1)
+		{
+			dst[i] = src[j];
+			i++;
+			j++;
+		}
+		dst[i] = '\0';
+	}
+	return (d_len + s_len);
+}
+
+int main()
+{
+	char dest[] = "word";
+	char saus[] = "up";
+	size_t res = 0;
+
+	res = ft_strlcat(dest, saus, 6);
+	printf("%zu\n", res);
+
+	return 0;
 }

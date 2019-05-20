@@ -12,7 +12,7 @@ size_t	ft_strlen(const char *s)
 
 int main()
 {
-	char str[] = "supercalifragilistic";
+	char str[] = "word";
 
 	printf("%zu\n", ft_strlen(str));
 

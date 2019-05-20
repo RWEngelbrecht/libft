@@ -1,9 +1,9 @@
 #ifndef _LIBFT_H_
-#define _LIBFT_H_
+# define _LIBFT_H_
 
-#include <unistd.h>
-#include <libc.h>
-#include <string.h>
+# include <unistd.h>
+# include <libc.h>
+# include <string.h>
 
 char	*ft_strcpy(char *dst, const char *src)
 {
