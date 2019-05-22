@@ -93,6 +93,22 @@ int ft_islower(int c)
 		return (0);
 }
 
+int	ft_isdigit(int c)
+{
+	if (c >= '0' && c <= '9')
+		return (1);
+	else
+		return (0);
+}
+
+int	ft_isalpha(int c)
+{
+	if (ft_islower(c) || ft_isupper(c))
+		return (1);
+	else
+		return (0);
+}
+
 typedef struct		s_list
 {
 
