@@ -4,6 +4,7 @@
 # include <unistd.h>
 # include <libc.h>
 # include <string.h>
+# include <ctype.h>
 
 char	*ft_strcpy(char *dst, const char *src)
 {
@@ -74,6 +75,22 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 		return (0);
 	else
 		return ((unsigned char)*s1 - (unsigned char) *s2);
+}
+
+int	ft_isupper(int c)
+{
+	if (c >= 'A' && c <= 'Z')
+		return (1);
+	else
+		return (0);
+}
+
+int ft_islower(int c)
+{
+	if (c >= 'a' && c <= 'z')
+		return (1);
+	else
+		return (0);
 }
 
 typedef struct		s_list
