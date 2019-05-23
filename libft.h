@@ -124,6 +124,19 @@ int	ft_isalpha(int c)
 		return (0);
 }
 
+void	*ft_memalloc(size_t size)
+{
+	void	*mem;
+
+	mem = malloc(size);
+	if (!mem)
+		return (NULL);
+	ft_bzero(mem, size);
+	return (mem);
+}
+
+char	*ft_strnew(size_t size);
+
 typedef struct		s_list
 {
 
