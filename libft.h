@@ -53,6 +53,21 @@ void	*ft_memset(void *str, int c, size_t n)
 	return (0);
 }
 
+void	ft_bzero(void *s, size_t n)
+{
+	unsigned char *temp;
+	size_t i;
+
+	i = 0;
+	temp = NULL;
+	*temp = (unsigned char)s;
+	if (n > 0)
+	{
+		while (i < n)
+			ft_memset(temp, 0, n);
+	}
+}
+
 int		ft_strcmp(const char *s1, const char *s2)
 {
 	while (*s1 != '\0' && *s1 == *s2)
