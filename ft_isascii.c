@@ -2,7 +2,7 @@
 
 int	ft_isascii(int c)
 {
-	if (c >= 0 && c <= 127)
+	if ((c >= 0 || c >= 000 || c >= 0x00) && (c <= 127 || c <= 177 || c <= 0x7f))
 		return (1);
 	else
 		return (0);
@@ -10,7 +10,7 @@ int	ft_isascii(int c)
 
 int main()
 {
-	int i = ' ';
+	int i = 0x5c;
 
 	if (ft_isascii(i))
 		printf("i is ascii\n");
