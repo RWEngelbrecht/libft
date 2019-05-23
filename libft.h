@@ -124,6 +124,32 @@ int	ft_isalpha(int c)
 		return (0);
 }
 
+int ft_toupper(int c)
+{
+	if (ft_isalpha(c))
+	{
+		if (c >= 65 && c <= 90)
+			return (c);
+		else
+			return (c - 32);
+	}
+	else
+		return (c);
+}
+
+int ft_tolower(int c)
+{
+	if (ft_isalpha(c))
+	{
+		if (c >= 97 && c <= 122)
+			return (c);
+		else
+			return (c + 32);
+	}
+	else
+		return (c);
+}
+
 void	*ft_memalloc(size_t size)
 {
 	void	*mem;
