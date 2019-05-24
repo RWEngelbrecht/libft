@@ -9,12 +9,3 @@ size_t	ft_strlen(const char *s)
 		i++;
 	return (i);
 }
-
-int main()
-{
-	char str[] = "word";
-
-	printf("%zu\n", ft_strlen(str));
-
-	return 0;
-}

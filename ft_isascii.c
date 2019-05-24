@@ -7,14 +7,3 @@ int	ft_isascii(int c)
 	else
 		return (0);
 }
-
-int main()
-{
-	int i = 0x5c;
-
-	if (ft_isascii(i))
-		printf("i is ascii\n");
-	else
-		printf("i is not ascii\n");
-	return 0;
-}
