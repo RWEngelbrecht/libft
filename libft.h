@@ -24,15 +24,7 @@ void	ft_putchar(char c);
 
 void	ft_putstr(char *str);
 
-size_t	ft_strlen(const char *s)
-{
-		int i;
-
-	i = 0;
-	while (s[i] != '\0')
-		i++;
-	return (i);
-}
+size_t	ft_strlen(const char *s);
 
 void	*ft_memset(void *str, int c, size_t n)
 {
