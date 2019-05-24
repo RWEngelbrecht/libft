@@ -1,21 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strequ.c                                        :+:      :+:    :+:   */
+/*   ft_strnequ.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rengelbr <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/24 11:01:45 by rengelbr          #+#    #+#             */
-/*   Updated: 2019/05/24 11:02:28 by rengelbr         ###   ########.fr       */
+/*   Created: 2019/05/24 13:00:46 by rengelbr          #+#    #+#             */
+/*   Updated: 2019/05/24 13:02:17 by rengelbr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strequ(char const *s1, char const *s2)
+int		ft_strnequ(char const *s1, char const *s2, size_t n)
 {
-	if (ft_strcmp(s1, s2) == 0)
-		return (1);
-	else
-		return (0);
+		if (ft_strncmp(s1, s2, n) == 0)
+			return (1);
+		else
+			return (0);
 }
