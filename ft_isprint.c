@@ -2,7 +2,7 @@
 
 int	ft_isprint(int c)
 {
-	if (c >= 32 && c <= 126)
+	if (c >= 040 && c <= 176)
 		return (1);
 	else
 		return (0);
@@ -10,7 +10,7 @@ int	ft_isprint(int c)
 
 int main()
 {
-	int i = '\0';
+	int i = ' ';
 
 	if (ft_isprint(i))
 		printf("i is printable\n");
