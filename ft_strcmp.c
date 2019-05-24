@@ -28,13 +28,3 @@ int		ft_strcmp(const char *s1, const char *s2)
 	return (res);
 	*/
 }
-
-int main()
-{
-	char str1[] = "word";
-	char str2[] = "wurd";
-
-	printf("%d\n", ft_strcmp(str1, str2));
-
-	return 0;
-}

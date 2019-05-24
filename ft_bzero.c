@@ -20,13 +20,3 @@ void	ft_bzero(void *s, size_t n)
 		
 	}
 }
-
-int main()
-{
-	char test[20] = "asdfghjkl";
-	printf("before bzero: %s\n", test);
-	bzero(test, 0);
-	printf("after bzero: %s\n", test);
-
-	return (0);
-}

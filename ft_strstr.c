@@ -37,13 +37,3 @@ char *ft_strstr(const char *stack, const char *needle)
 	}
 	return (NULL);
 }
-
-int main()
-{
-	char strn[] = "haystackss";
-	char ndl[] = "";
-
-	printf("%s\n", ft_strstr(strn, ndl));
-
-	return (0);
-}
