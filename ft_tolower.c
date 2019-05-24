@@ -12,13 +12,3 @@ int ft_tolower(int c)
 	else
 		return (c);
 }
-
-int main()
-{
-	int i = 'Z';
-
-	printf("var i is %c\n", i);
-	printf("var i is %c\n", ft_tolower(i));
-
-	return 0;
-}

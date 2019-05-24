@@ -12,13 +12,3 @@ int ft_toupper(int c)
 	else
 		return (c);
 }
-
-int main()
-{
-	int i = 'a';
-
-	printf("var i is %c\n", i);
-	printf("var i is %c\n", ft_toupper(i));
-
-	return 0;
-}
