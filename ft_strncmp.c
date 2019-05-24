@@ -13,13 +13,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	else
 		return ((unsigned char)*s1 - (unsigned char) *s2);
 }
-
-int main()
-{
-	char str1[] = "word";
-	char str2[] = "q";
-
-	printf("%d\n", ft_strncmp(str1, str2, 1));
-
-	return 0;
-}
