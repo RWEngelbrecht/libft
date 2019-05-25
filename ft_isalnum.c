@@ -7,15 +7,3 @@ int	ft_isalnum(int c)
 	else
 		return (0);
 }
-
-int main()
-{
-	int i = ' ';
-
-	if (ft_isalnum(i))
-		printf("i is alphanum\n");
-	else
-		printf("i is not alphanum\n");
-
-	return (0);
-}

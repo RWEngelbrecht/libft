@@ -14,37 +14,8 @@ char *ft_strnstr(const char *stack, const char *needle, size_t len)
 		len--;
 		stack++;
 	}
-		/*if (str[i] == ndl[j])
-		{
-			k = i;
-			while (len > 0)
-			{
-				if ()
-					
-			}
-			while (nd_len <= len)
-			{
-				if (str[k] != ndl[j])
-					return (NULL);
-				k++;
-				j++;
-				nd_len--;
-				len--;
-			}
-			return(&str[i]);
-		}*/
 	if (last_res != 0)
 		return (NULL);
 	else
 		return ((char *)stack);
-}
-
-int main()
-{
-	char strn[] = "haystackss";
-	char ndl[] = "sta";
-
-	printf("%s\n", ft_strnstr(strn, ndl, 6));
-
-	return (0);
 }

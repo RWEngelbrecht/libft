@@ -28,16 +28,3 @@ char	*ft_strcat(char *s1, const char *s2)
 
 	return (s1);
 }
-
-int main()
-{
-	char s1[] = "birds";
-	char s2[] = "words";
-	char *res = NULL;
-
-	printf("src is %s, dest is %s\n", s2, s1);
-	res = ft_strcat(s1, s2);
-	printf("catted to: %s \n", res);
-
-	return (0);
-}

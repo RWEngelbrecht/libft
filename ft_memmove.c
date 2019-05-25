@@ -34,15 +34,3 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 		}
 		return (dst);
 }
-/*
-int main()
-{
-	char sauce[] = "ToeRE";
-	char dest[] = "ToHere";
-
-	printf("dest = %s\n", dest);
-	ft_memmove(dest, sauce, 6);
-	printf("dest = %s\n", dest);
-
-	return 0;
-}*/

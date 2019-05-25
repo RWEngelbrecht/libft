@@ -25,15 +25,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	}
 	return (d_len + s_len);
 }
-
-int main()
-{
-	char dest[] = "word";
-	char saus[] = "up";
-	size_t res = 0;
-
-	res = ft_strlcat(dest, saus, 6);
-	printf("%zu\n", res);
-
-	return 0;
-}

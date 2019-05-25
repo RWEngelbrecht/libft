@@ -24,13 +24,3 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n)
 		printf("Val the same.\n");
 		return (*str1 - *str2);
 }
-
-int main()
-{
-	char str1[] = "Wor";
-	char str2[] = "Wod";
-
-	printf("%d\n", ft_memcmp(str1, str2, 4));
-
-	return 0;
-}

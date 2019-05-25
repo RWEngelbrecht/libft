@@ -19,19 +19,3 @@ void *ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-
-int main()
-{
-	char str[] = "Farts";
-	char letter = 'q';
-
-	printf("Is the letter %c in the string %s?\n", letter, str);
-	if ((ft_memchr(str, letter,  5)) != NULL)
-	{
-		printf("YES\n");
-	}
-	else
-		printf("NO\n");
-
-	return 0;
-}

@@ -13,15 +13,3 @@ char	*ft_strcpy(char *dst, const char *src)
 	dst[i] = '\0';
 	return (dst);
 }
-
-int main()
-{
-	char s1[] = "";
-	char s2[] = "this is sparta";
-
-	printf("src is %s, dest is %s\n", s2, s1);
-	ft_strcpy(s1, s2);
-	printf("src is %s, dest is %s\n", s2, s1);
-
-	return (0);
-}

@@ -20,18 +20,3 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 
 		return (d);
 }
-
-int main()
-{
-	//char *dest;
-	//char *sauce;
-
-	char dest[] = "QWERTY";
-	char sauce[] = "ABCDEF";
-
-	printf("dest = %s\n", dest);
-	ft_memccpy(dest, sauce, 'D', 6);
-	printf("dest = %s\n", dest);
-
-	return (0);
-}

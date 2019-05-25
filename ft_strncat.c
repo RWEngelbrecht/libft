@@ -27,15 +27,3 @@ char	*ft_strncat(char *s1, const char *s2, size_t n)
 
 	return (s1);
 }
-
-int main()
-{
-	char dst[] = "fish";
-	char src[] = "water";
-	char *res = NULL;
-
-	res = ft_strncat(dst, src, 1);
-	printf("res is %s\n", res);
-
-	return 0;
-}

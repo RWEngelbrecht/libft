@@ -13,12 +13,3 @@ char *ft_strrchr(const char *s, int c)
 	}
 	return (NULL);
 }
-
-int main()
-{
-	char str[] = "worodos";
-
-	printf("%s\n", ft_strrchr(str, 'o'));
-
-	return 0;
-}
