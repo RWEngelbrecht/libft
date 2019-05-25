@@ -40,6 +40,8 @@ void	ft_memdel(void **ap);
 
 char	*ft_strnew(size_t size);
 
+char *  ft_strsub(char const *s, unsigned int start, size_t len);
+
 typedef struct		s_list
 {
 
