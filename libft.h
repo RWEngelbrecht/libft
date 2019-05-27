@@ -1,8 +1,8 @@
 #ifndef _LIBFT_H_
 # define _LIBFT_H_
 
-# include <unistd.h>
-# include <libc.h>
+# include <unistd.h>		//REMOVE
+# include <libc.h>			//REMOVE
 # include <string.h>
 # include <ctype.h>
 
@@ -41,6 +41,12 @@ void	ft_memdel(void **ap);
 char	*ft_strnew(size_t size);
 
 char *  ft_strsub(char const *s, unsigned int start, size_t len);
+
+char * ft_strjoin(char const *s1, char const *s2);
+
+int	ft_isalnum(int c);
+
+char *  ft_strtrim(char const *s);
 
 typedef struct		s_list
 {
