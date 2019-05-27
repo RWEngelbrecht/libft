@@ -5,12 +5,13 @@
 # include <libc.h>			//REMOVE
 # include <string.h>
 # include <ctype.h>
+# include <unistd.h>
 
 char	*ft_strcpy(char *dst, const char *src);
 
 void	ft_putchar(char c);
 
-void	ft_putstr(char *str);
+void	ft_putstr(char const *s);
 
 size_t	ft_strlen(const char *s);
 
