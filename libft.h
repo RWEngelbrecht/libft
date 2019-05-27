@@ -50,6 +50,8 @@ char *  ft_strtrim(char const *s);
 
 char    **ft_strsplit(char const *s, char c);
 
+char    *ft_itoa(int n);
+
 typedef struct		s_list
 {
 
