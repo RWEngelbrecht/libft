@@ -6,7 +6,7 @@
 /*   By: rengelbr <rengelbr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 09:53:14 by rengelbr          #+#    #+#             */
-/*   Updated: 2019/05/27 11:11:42 by rengelbr         ###   ########.fr       */
+/*   Updated: 2019/05/27 12:08:34 by rengelbr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ char *  ft_strtrim(char const *s)
     i = 0;
     j = ft_strlen(s);
     k = 0;
+    if (!j)
+        return (NULL);
     while (s[i] == ' ' || s[i] == '\n' || s[i] == '\t')
         i++;
     while (s[j] == ' ' || s[j] == '\n' || s[j] == '\t')
