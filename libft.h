@@ -48,6 +48,8 @@ int	ft_isalnum(int c);
 
 char *  ft_strtrim(char const *s);
 
+char    **ft_strsplit(char const *s, char c);
+
 typedef struct		s_list
 {
 
