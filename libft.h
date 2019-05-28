@@ -2,7 +2,7 @@
 # define _LIBFT_H_
 
 # include <unistd.h>		//REMOVE
-# include <libc.h>			//REMOVE
+# include <stdlib.h>			//REMOVE
 # include <string.h>
 # include <ctype.h>
 # include <unistd.h>
@@ -18,6 +18,8 @@ void 	ft_putstr_fd(char const *s, int fd);
 void    ft_putchar_fd(char c, int fd);
 
 size_t	ft_strlen(const char *s);
+
+char	*ft_strcat(char *s1, const char *s2);
 
 void	*ft_memset(void *str, int c, size_t n);
 
@@ -57,6 +59,7 @@ char    **ft_strsplit(char const *s, char c);
 
 char    *ft_itoa(int n);
 
+char *ft_strrev(char *s);
 
 typedef struct		s_list
 {
