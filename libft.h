@@ -13,6 +13,10 @@ void	ft_putchar(char c);
 
 void	ft_putstr(char const *s);
 
+void 	ft_putstr_fd(char const *s, int fd);
+
+void    ft_putchar_fd(char c, int fd);
+
 size_t	ft_strlen(const char *s);
 
 void	*ft_memset(void *str, int c, size_t n);
@@ -41,17 +45,18 @@ void	ft_memdel(void **ap);
 
 char	*ft_strnew(size_t size);
 
-char *  ft_strsub(char const *s, unsigned int start, size_t len);
+char	*ft_strsub(char const *s, unsigned int start, size_t len);
 
-char * ft_strjoin(char const *s1, char const *s2);
+char	*ft_strjoin(char const *s1, char const *s2);
 
-int	ft_isalnum(int c);
+int		ft_isalnum(int c);
 
-char *  ft_strtrim(char const *s);
+char	*ft_strtrim(char const *s);
 
 char    **ft_strsplit(char const *s, char c);
 
 char    *ft_itoa(int n);
+
 
 typedef struct		s_list
 {
