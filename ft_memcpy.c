@@ -6,26 +6,28 @@
 /*   By: rengelbr <rengelbr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 12:54:24 by rengelbr          #+#    #+#             */
-/*   Updated: 2019/05/28 12:54:28 by rengelbr         ###   ########.fr       */
+/*   Updated: 2019/05/28 14:04:30 by rengelbr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-		size_t i;
+		size_t		i;
+		char		*d;
+		const char	*s;
 
-		char *d;
-		char *s;
-
-		d = (char *)dst;
-		s = (char *)src;
+		d = dst;
+		s = src;
 		i = 0;
+		if (dst == NULL && src == NULL && !(n <= 0))
+			return (NULL);
 		while (i < n)
 		{
 			d[i] = s[i];
 			i++;
 		}
-		return (0);
+		return (dst);
 }
