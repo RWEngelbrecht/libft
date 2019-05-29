@@ -6,7 +6,7 @@
 /*   By: rengelbr <rengelbr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 12:54:24 by rengelbr          #+#    #+#             */
-/*   Updated: 2019/05/28 14:23:14 by rengelbr         ###   ########.fr       */
+/*   Updated: 2019/05/29 11:51:57 by rengelbr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 		char		*d;
 		const char	*s;
 
-		d = dst;
-		s = src;
+		d = (char*)dst;
+		s = (const char*)src;
 		i = 0;
 		if (dst == NULL && src == NULL && !(n <= 0))
 			return (NULL);
