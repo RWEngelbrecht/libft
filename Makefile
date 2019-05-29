@@ -12,6 +12,7 @@ all:
 clean:
 	rm -f *.o
 	rm -f test
+	rm -f a.out
 
 fclean: clean
 	rm -f $(LBNAME)
