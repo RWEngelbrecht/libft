@@ -6,7 +6,7 @@
 /*   By: rengelbr <rengelbr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 10:06:48 by rengelbr          #+#    #+#             */
-/*   Updated: 2019/05/30 15:07:13 by rengelbr         ###   ########.fr       */
+/*   Updated: 2019/05/30 15:41:56 by rengelbr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,12 @@ int	ft_atoi(const char *str)
 	i = 0;
 	neg = 0;
 	n = 0;
+	if ((*str - '0') <= -2147483647)
+		return (n);
+	if (*str - '0' >= 2147483647)
+		return (n - 1);
 	while (str[i] == ' ' || (str[i] >= '\t' && str[i] <= '\r'))
 		i++;
-	if ()
 	if (str[i] == '-')
 	{
 		neg = 1;
