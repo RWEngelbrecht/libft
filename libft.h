@@ -67,6 +67,8 @@ char	*ft_strchr(const char *s, int c);
 
 char	*ft_strrchr(const char *s, int c);
 
+char	*ft_strstr(const char *stack, const char *needle);
+
 typedef struct		s_list
 {
 
