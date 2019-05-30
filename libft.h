@@ -61,7 +61,11 @@ char    **ft_strsplit(char const *s, char c);
 
 char    *ft_itoa(int n);
 
-char *ft_strrev(char *s);
+char	*ft_strrev(char *s);
+
+char	*ft_strchr(const char *s, int c);
+
+char	*ft_strrchr(const char *s, int c);
 
 typedef struct		s_list
 {
