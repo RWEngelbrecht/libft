@@ -6,7 +6,7 @@
 /*   By: rengelbr <rengelbr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 10:06:21 by rengelbr          #+#    #+#             */
-/*   Updated: 2019/05/27 15:08:44 by rengelbr         ###   ########.fr       */
+/*   Updated: 2019/05/31 10:17:37 by rigardtengelbrecht###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_isprint(int c)
 {
-	if (c >= 32 && c <= 127)
+	if (c >= ' ' && c <= '~')
 		return (1);
 	else
 		return (0);
