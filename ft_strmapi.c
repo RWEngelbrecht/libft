@@ -6,18 +6,21 @@
 /*   By: rengelbr <rengelbr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 10:08:02 by rengelbr          #+#    #+#             */
-/*   Updated: 2019/05/30 10:08:03 by rengelbr         ###   ########.fr       */
+/*   Updated: 2019/05/31 11:21:28 by rigardtengelbrecht###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char *str;
 	unsigned int i;
 
-	str = ft_strnew(ft_strlen(s));
+	if(s)
+		str = ft_strnew(ft_strlen(s));
+	else
+		str = NULL;
 	i = 0;
 	if (!str)
 		return (NULL);
