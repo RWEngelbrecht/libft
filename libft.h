@@ -9,6 +9,8 @@
 
 char	*ft_strcpy(char *dst, const char *src);
 
+char	*ft_strncpy(char *dst, const char *src, size_t len);
+
 void	ft_putchar(char c);
 
 void	ft_putstr(char const *s);
@@ -38,6 +40,8 @@ int 	ft_islower(int c);
 int		ft_isdigit(int c);
 
 int		ft_isalpha(int c);
+
+int     ft_iswhitespace(int c);
 
 int		ft_toupper(int c);
 
