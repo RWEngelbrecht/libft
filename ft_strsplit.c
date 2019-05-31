@@ -6,12 +6,12 @@
 /*   By: rengelbr <rengelbr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 12:00:05 by rengelbr          #+#    #+#             */
-/*   Updated: 2019/05/27 14:22:42 by rengelbr         ###   ########.fr       */
+/*   Updated: 2019/05/31 15:39:44 by rigardtengelbrecht###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+/*
 int     get_len(char const *str, char c)
 {
     int     len;
@@ -28,7 +28,7 @@ int     get_len(char const *str, char c)
     }
     return (len);
 }
-
+*/
 int     word_count(char const *str, char c)
 {
     int     count;
@@ -48,6 +48,48 @@ int     word_count(char const *str, char c)
     return (count);
 }
 
+void    ft_malloc2d(char ***arr, int n, int m)
+{
+    int i;
+
+    i = 0;
+    *arr = (char **)malloc(sizeof(char*) * n)
+    while (i < n)
+    {
+        (*arr)[i] = (char*)malloc(sizeof(char) * m)
+        i++;
+    }
+}
+
+char    **ft_strsplit(char const *s, char c)
+{
+    int     i;
+    int     n;
+    int     j;
+    //int     k;
+    char    **arr;
+
+    i = 0;
+    n = 0;
+    j = 0;
+    //k = 0;
+    *arr = (char**)malloc(sizeof(char*) * word_count(s, c));
+    while (*s)
+    {
+        
+        while (s[i] == c)
+            i++;
+        while (s[i] != c)
+        {
+            arr[n][j] = s[i];
+            i++;
+            j++;
+        }
+        //n++;
+    }
+    return (arr);
+}
+/*
 char    **ft_strsplit(char const *s, char c)
 {
     int     i;
@@ -77,37 +119,4 @@ char    **ft_strsplit(char const *s, char c)
     }
     return (arr);
 }
-
-/*char ** ft_strsplit(char const *s, char c)
-{
-    char    **arr;
-    int     i;
-    int     n;
-    int     j;
-    int     k;
-
-    i = 0;
-    n = 0;
-    j = 0;
-    k = 0;
-    while (*s)
-    {
-        if (s[i] == c)
-            i++;
-        else
-        {
-            while (s[i] != c)
-            {
-                if (s[i] == c)
-                {
-                    *arr[n] = (char *)ft_memalloc(j + 1);
-                    n++;
-                    j = 0;
-                }
-                i++;
-                j++;
-            }
-        }
-    }
-    return (**arr);
-}*/
+*/
