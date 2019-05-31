@@ -6,7 +6,7 @@
 /*   By: rengelbr <rengelbr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 10:05:56 by rengelbr          #+#    #+#             */
-/*   Updated: 2019/05/30 10:05:59 by rengelbr         ###   ########.fr       */
+/*   Updated: 2019/05/31 10:30:40 by rigardtengelbrecht###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
 
 void	ft_memdel(void **ap)
 {
-	free(*ap);
-	*ap = NULL;
+	if (ap)
+	{
+		free(*ap);
+		*ap = NULL;
+	}
 }
