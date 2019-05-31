@@ -6,7 +6,7 @@
 /*   By: rengelbr <rengelbr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 10:06:28 by rengelbr          #+#    #+#             */
-/*   Updated: 2019/05/30 10:06:30 by rengelbr         ###   ########.fr       */
+/*   Updated: 2019/05/31 10:34:14 by rigardtengelbrecht###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 void	ft_strclr(char *s)
 {
-	while (*s)
-		*s++ = '\0';
+	if (s)
+		while (*s)
+			*s++ = '\0';
 }
