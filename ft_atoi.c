@@ -6,7 +6,7 @@
 /*   By: rengelbr <rengelbr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 10:06:48 by rengelbr          #+#    #+#             */
-/*   Updated: 2019/05/30 15:41:56 by rengelbr         ###   ########.fr       */
+/*   Updated: 2019/06/03 13:00:26 by rengelbr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,11 +33,7 @@ int	ft_atoi(const char *str)
 		i++;
 	}
 	while (ft_isdigit(str[i]))
-	{
-		n *= 10;
-		n += str[i] - '0';
-		i++;
-	}
+		n = (n * 10) + (str[i++] - '0');
 	if (neg == 1)
 		return (-n);
 	else
