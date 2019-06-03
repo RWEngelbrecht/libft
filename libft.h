@@ -73,6 +73,8 @@ char	*ft_strrchr(const char *s, int c);
 
 char	*ft_strstr(const char *stack, const char *needle);
 
+char	*ft_strdup(const char *s1);
+
 typedef struct		s_list
 {
 
