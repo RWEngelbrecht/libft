@@ -6,117 +6,80 @@
 /*   By: rengelbr <rengelbr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 12:00:05 by rengelbr          #+#    #+#             */
-/*   Updated: 2019/05/31 15:39:44 by rigardtengelbrecht###   ########.fr       */
+/*   Updated: 2019/06/03 09:39:08 by rengelbr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-/*
-int     get_len(char const *str, char c)
-{
-    int     len;
-    int     i;
 
-    len = 0;
-    i = 0;
-    while (str[i] == c)
-        i++;
-    while (str[i] != c && str[i] != '\0')
-    {
-        i++;
-        len++;
-    }
-    return (len);
-}
-*/
-int     word_count(char const *str, char c)
+static int     ft_wordcount(char const *str, char c)
 {
     int     count;
     int     i;
 
     count = 0;
     i = 0;
-    while (*str)
+    while (str[i] != '\0')
     {
         while (str[i] == c)
             i++;
         if (str[i] != c && str[i] != '\0')
+        {
             count++;
-        while (str[i] != c && str[i] != '\0')
             i++;
+            while (str[i] != c && str[i] != '\0')
+                i++;
+        }
     }
     return (count);
 }
 
-void    ft_malloc2d(char ***arr, int n, int m)
+static char     **ft_split(char const *s, char c, char **arr)
 {
-    int i;
-
-    i = 0;
-    *arr = (char **)malloc(sizeof(char*) * n)
-    while (i < n)
-    {
-        (*arr)[i] = (char*)malloc(sizeof(char) * m)
-        i++;
-    }
-}
-
-char    **ft_strsplit(char const *s, char c)
-{
+    int     l;
+    int     start;
     int     i;
-    int     n;
-    int     j;
-    //int     k;
-    char    **arr;
 
+    l = 0;
+    start = 0;
     i = 0;
-    n = 0;
-    j = 0;
-    //k = 0;
-    *arr = (char**)malloc(sizeof(char*) * word_count(s, c));
-    while (*s)
+    while (s[l] != '\0')
     {
-        
-        while (s[i] == c)
-            i++;
-        while (s[i] != c)
+        if (s[l] != c)
         {
-            arr[n][j] = s[i];
-            i++;
-            j++;
+            start = l;
+            while (s[l] != c && s[l])
+                l++;
+            arr[i++] = ft_strsub(s, start, (l - start));
         }
-        //n++;
+        else
+            while (s[l] == c && s[l])
+                l++;
+        arr[i] = NULL;
     }
     return (arr);
 }
-/*
+
 char    **ft_strsplit(char const *s, char c)
 {
-    int     i;
-    int     j;
-    int     k;
-    int     n;
     char    **arr;
 
-    i = 0;
-    j = 0;
-    n = word_count(s, c);
-    if (!s || !(arr = (char **)malloc(sizeof(*arr) * (word_count(s, c) + 1))))
+    if (!s)
+    {
+        if (c != ' ')
+        {
+            if (!(arr = (char **)malloc(sizeof(char *))))
+                return (NULL);
+            arr[0] = NULL;
+            return (arr);
+        }
+    }
+    else if (!c)
+    {
+        return ((char **)ft_strdup(s));
+    }
+    if (!(arr = (char **)malloc(sizeof(*arr) * ft_wordcount(s, c) + 1)))
         return (NULL);
-    while (i < n)
-    {
-        k = 0;
-        while (s[j] == c)
-            j++;
-        while (s[j] != c && s[j] != '\0')
-        {
-            arr[i][k] = s[j];
-            k++;
-            j++;
-        }
-        arr[i][k] = '\0';
-        i++;
-    }
+    arr = ft_split(s, c, arr);
     return (arr);
 }
-*/
