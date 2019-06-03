@@ -6,13 +6,13 @@
 /*   By: rigardte <rigardte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 19:15:49 by rigardte          #+#    #+#             */
-/*   Updated: 2019/05/27 19:15:52 by rigardtengelbrecht###   ########.fr       */
+/*   Updated: 2019/06/03 10:07:31 by rengelbr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strrev(char *s)
+char    *ft_strrev(char *s)
 {
     size_t n;
     size_t size;
