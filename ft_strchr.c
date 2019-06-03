@@ -6,7 +6,7 @@
 /*   By: rengelbr <rengelbr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/29 14:16:28 by rengelbr          #+#    #+#             */
-/*   Updated: 2019/05/29 14:16:31 by rengelbr         ###   ########.fr       */
+/*   Updated: 2019/06/03 13:42:45 by rengelbr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	int		i ;
+	int		i;
 
 	i = 0;
 	while (s[i] != '\0')

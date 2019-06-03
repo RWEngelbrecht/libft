@@ -6,20 +6,20 @@
 /*   By: rigardte <rigardte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 19:37:14 by rigardte          #+#    #+#             */
-/*   Updated: 2019/05/27 19:37:15 by rigardtengelbrecht###   ########.fr       */
+/*   Updated: 2019/06/03 13:35:17 by rengelbr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void   ft_putstr(char const *s)
+void	ft_putstr(char const *s)
 {
-    int i;
+	int		i;
 
-    i = 0;
-    while (s[i] != '\0')
-    {
-        write(1, &s[i], 1);
-        i++;
-    }
+	i = 0;
+	while (s[i] != '\0')
+	{
+		write(1, &s[i], 1);
+		i++;
+	}
 }

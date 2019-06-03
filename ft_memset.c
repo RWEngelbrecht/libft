@@ -6,7 +6,7 @@
 /*   By: rengelbr <rengelbr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 11:10:26 by rengelbr          #+#    #+#             */
-/*   Updated: 2019/05/28 12:49:28 by rengelbr         ###   ########.fr       */
+/*   Updated: 2019/06/03 13:32:17 by rengelbr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	*ft_memset(void *b, int c, size_t n)
 {
-	unsigned int i;
-	unsigned char *temp;
+	unsigned int	i;
+	unsigned char	*temp;
 
 	temp = (unsigned char*)b;
 	i = 0;

@@ -6,16 +6,16 @@
 /*   By: rigardte <rigardte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/31 12:29:27 by rigardte          #+#    #+#             */
-/*   Updated: 2019/05/31 12:38:41 by rigardtengelbrecht###   ########.fr       */
+/*   Updated: 2019/06/03 13:09:52 by rengelbr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int     ft_iswhitespace(int c)
+int		ft_iswhitespace(int c)
 {
-    if (c == ' ' || c == '\t' || c == '\n'
-        || c == '\v' || c == '\f' || c == '\r')
-        return (1);
-    return (0);
+	if (c == ' ' || c == '\t' || c == '\n'
+			|| c == '\v' || c == '\f' || c == '\r')
+		return (1);
+	return (0);
 }

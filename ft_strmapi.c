@@ -6,7 +6,7 @@
 /*   By: rengelbr <rengelbr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 10:08:02 by rengelbr          #+#    #+#             */
-/*   Updated: 2019/05/31 11:21:28 by rigardtengelbrecht###   ########.fr       */
+/*   Updated: 2019/06/03 13:50:19 by rengelbr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	char *str;
-	unsigned int i;
+	char			*str;
+	unsigned int	i;
 
-	if(s)
+	if (s)
 		str = ft_strnew(ft_strlen(s));
 	else
 		str = NULL;

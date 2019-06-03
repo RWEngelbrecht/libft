@@ -6,7 +6,7 @@
 /*   By: rengelbr <rengelbr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 14:45:38 by rengelbr          #+#    #+#             */
-/*   Updated: 2019/05/29 12:08:59 by rengelbr         ###   ########.fr       */
+/*   Updated: 2019/06/03 13:33:04 by rengelbr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	size_t i;
-	unsigned char *s;
-	unsigned char *d;
+	size_t			i;
+	unsigned char	*s;
+	unsigned char	*d;
 
 	i = 0;
 	d = (unsigned char *)dst;
