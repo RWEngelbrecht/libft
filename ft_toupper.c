@@ -6,13 +6,13 @@
 /*   By: rengelbr <rengelbr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 10:08:52 by rengelbr          #+#    #+#             */
-/*   Updated: 2019/05/30 10:08:53 by rengelbr         ###   ########.fr       */
+/*   Updated: 2019/06/03 16:51:29 by rengelbr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_toupper(int c)
+int		ft_toupper(int c)
 {
 	if (ft_isalpha(c))
 	{
