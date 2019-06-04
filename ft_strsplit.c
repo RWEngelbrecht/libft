@@ -6,16 +6,16 @@
 /*   By: rengelbr <rengelbr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 12:00:05 by rengelbr          #+#    #+#             */
-/*   Updated: 2019/06/03 17:19:48 by rengelbr         ###   ########.fr       */
+/*   Updated: 2019/06/04 14:28:05 by rengelbr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int     ft_wordcount(char const *str, char c)
+static int		ft_wordcount(char const *str, char c)
 {
-	int     count;
-	int     i;
+	int		count;
+	int		i;
 
 	count = 0;
 	i = 0;
@@ -34,11 +34,11 @@ static int     ft_wordcount(char const *str, char c)
 	return (count);
 }
 
-static char     **ft_split(char const *s, char c, char **arr)
+static char		**ft_split(char const *s, char c, char **arr)
 {
-	int     l;
-	int     start;
-	int     i;
+	int		l;
+	int		start;
+	int		i;
 
 	l = 0;
 	start = 0;
@@ -60,9 +60,9 @@ static char     **ft_split(char const *s, char c, char **arr)
 	return (arr);
 }
 
-char    **ft_strsplit(char const *s, char c)
+char		**ft_strsplit(char const *s, char c)
 {
-	char    **arr;
+	char	**arr;
 
 	if (!s)
 	{
@@ -75,9 +75,7 @@ char    **ft_strsplit(char const *s, char c)
 		}
 	}
 	else if (!c)
-	{
 		return ((char **)ft_strdup(s));
-	}
 	if (!(arr = (char **)malloc(sizeof(*arr) * ft_wordcount(s, c) + 1)))
 		return (NULL);
 	arr = ft_split(s, c, arr);
