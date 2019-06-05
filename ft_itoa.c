@@ -45,7 +45,6 @@ char	*ft_itoa(int n)
 	int		i;
 	int		neg;
 
-	//str = ft_strnew(ft_countchars(n));
 	i = 0;
 	neg = 0;
 	if (!(str = ft_strnew(ft_countchars(n))))
