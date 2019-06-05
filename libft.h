@@ -15,6 +15,7 @@
 # include <string.h>
 # include <ctype.h>
 # include <unistd.h>
+# include <stdlib.h>
 
 char	*ft_strcpy(char *dst, const char *src);
 char	*ft_strncpy(char *dst, const char *src, size_t len);
