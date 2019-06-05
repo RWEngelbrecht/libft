@@ -18,7 +18,7 @@ char	*ft_strrev(char *s)
 	size_t	size;
 	size_t	half;
 	size_t	size2;
-	char	str;
+	char		str;
 
 	n = 0;
 	size = ft_strlen(s);
