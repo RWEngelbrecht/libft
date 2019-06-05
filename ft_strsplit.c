@@ -6,7 +6,7 @@
 /*   By: rengelbr <rengelbr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 12:00:05 by rengelbr          #+#    #+#             */
-/*   Updated: 2019/06/04 14:28:05 by rengelbr         ###   ########.fr       */
+/*   Updated: 2019/06/05 12:48:20 by rengelbr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ static char		**ft_split(char const *s, char c, char **arr)
 	return (arr);
 }
 
-char		**ft_strsplit(char const *s, char c)
+char			**ft_strsplit(char const *s, char c)
 {
 	char	**arr;
 
