@@ -45,10 +45,10 @@ char	*ft_itoa(int n)
 	int		i;
 	int		neg;
 
-	str = ft_strnew(ft_countchars(n));
+	//str = ft_strnew(ft_countchars(n));
 	i = 0;
 	neg = 0;
-	if (!(ft_strnew(ft_countchars(n))))
+	if (!(str = ft_strnew(ft_countchars(n))))
 		return (NULL);
 	if (n == 0)
 		str[i++] = '0';
