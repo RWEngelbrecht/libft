@@ -6,7 +6,7 @@
 /*   By: rigardte <rigardte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 19:15:49 by rigardte          #+#    #+#             */
-/*   Updated: 2019/06/03 16:34:09 by rengelbr         ###   ########.fr       */
+/*   Updated: 2019/06/05 15:33:31 by rengelbr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strrev(char *s)
 	size_t	size;
 	size_t	half;
 	size_t	size2;
-	char		str;
+	char	str;
 
 	n = 0;
 	size = ft_strlen(s);
