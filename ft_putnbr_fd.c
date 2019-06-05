@@ -21,6 +21,12 @@ void	ft_putnbr_fd(int n, int fd)
 		n %= 1000000000;
 		ft_putnbr_fd(-n, fd);
 	}
+	if (n == 2147483648)
+	{
+		ft_putchar('2');
+		n %= 1000000000;
+		ft_putnbr_fd(n, fd);
+	}
 	else if (n < 0)
 	{
 		ft_putchar('-');
