@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_iswhitespace.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rigardte <rigardte@student.42.fr>          +#+  +:+       +#+        */
+/*   By: rengelbr <rengelbr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/31 12:29:27 by rigardte          #+#    #+#             */
-/*   Updated: 2019/06/03 13:09:52 by rengelbr         ###   ########.fr       */
+/*   Created: 2019/05/31 12:29:27 by rengelbr          #+#    #+#             */
+/*   Updated: 2019/06/05 11:35:51 by rigardtengelbrecht###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,7 @@
 
 int		ft_iswhitespace(int c)
 {
-	if (c == ' ' || c == '\t' || c == '\n'
-			|| c == '\v' || c == '\f' || c == '\r')
+	if (c == ' ' || c == '\t' || c == '\n')
 		return (1);
 	return (0);
 }
