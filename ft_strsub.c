@@ -6,7 +6,7 @@
 /*   By: rengelbr <rengelbr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/24 13:53:02 by rengelbr          #+#    #+#             */
-/*   Updated: 2019/06/03 16:50:44 by rengelbr         ###   ########.fr       */
+/*   Updated: 2019/06/05 10:30:48 by rigardtengelbrecht###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 			str[i] = s[i];
 			i++;
 		}
+		str[i] = '\0';
 	}
 	return (str);
 }
