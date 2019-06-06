@@ -49,8 +49,8 @@ char	*ft_itoa(int n)
 	neg = 0;
 	if (!(str = ft_strnew(ft_countchars(n))))
 		return (NULL);
-	if (n <= -2147483647)
-		return (ft_strdup("-2147483647"));
+	if (n <= -2147483648)
+		return (ft_strdup("-2147483648"));
 	if (n == 0)
 		str[i++] = '0';
 	if (n < 0)
