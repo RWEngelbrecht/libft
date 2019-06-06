@@ -6,7 +6,7 @@
 /*   By: rengelbr <rengelbr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 10:07:44 by rengelbr          #+#    #+#             */
-/*   Updated: 2019/06/06 19:31:55 by rengelbr         ###   ########.fr       */
+/*   Updated: 2019/06/06 19:39:33 by rengelbr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_striter(char *s, void (*f)(char *))
 {
 	if (s && f)
 	{
-		while (*s != '\0')
+		while (*s)
 			f(s++);
 	}
 }
