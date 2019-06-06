@@ -6,13 +6,13 @@
 /*   By: rengelbr <rengelbr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 15:17:59 by rengelbr          #+#    #+#             */
-/*   Updated: 2019/06/03 13:24:17 by rengelbr         ###   ########.fr       */
+/*   Updated: 2019/06/06 11:34:13 by rigardtengelbrecht###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_countchars(int n)
+static int		ft_countchars(int n)
 {
 	int		cnt;
 
