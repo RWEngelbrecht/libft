@@ -6,7 +6,7 @@
 /*   By: rengelbr <rengelbr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 10:06:51 by rengelbr          #+#    #+#             */
-/*   Updated: 2019/06/06 18:19:12 by rengelbr         ###   ########.fr       */
+/*   Updated: 2019/06/06 18:30:14 by rengelbr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,6 @@
 
 int		ft_strcmp(const char *s1, const char *s2)
 {
-	int i;
-
-	i = 0;
 	while (*s1 && *s2 && *s1 == *s2)
 	{
 		s1++;
