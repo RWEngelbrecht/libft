@@ -16,17 +16,22 @@ char	*ft_strnstr(const char *stack, const char *needle, size_t len)
 {
 	size_t	nd_len;
 	size_t	i;
+	int		last;
 
+	if (!(*needle))
+		return ((char *)stack);
 	nd_len = ft_strlen(needle);
 	i = 0;
-	if (nd_len == 0)
-		return ((char *)stack);
-	while (len > 0 && stack[i] != '\0')
+	last = 1;
+	while (nd_len <= len && stack[i] != '\0' && (last = ft_strncmp(stack, needle, nd_len)))
 	{
-		if (!(ft_strncmp(&(stack[i]), &(needle[i]), nd_len)) && (len >= (len - i)))
-			return ((char*)ft_strstr(&stack[i], &needle[i]));
+	//	if (!()) && (len >= (len - i)))
+	//		return ((char*)ft_strstr(&stack[i], &needle[i]));
 		len--;
 		i++;
 	}
-	return (NULL);
+	if (last != 0)
+		return (NULL);
+	else
+		return ((char*)stack);
 }
