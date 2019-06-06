@@ -19,7 +19,6 @@ char	*ft_strnstr(const char *stack, const char *needle, size_t len)
 
 	nd_len = ft_strlen(needle);
 	i = 0;
-	printf("%zu\n", nd_len);
 	if (nd_len == 0)
 		return ((char *)stack);
 	while (len > 0 && stack[i] != '\0')
