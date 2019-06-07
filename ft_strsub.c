@@ -6,7 +6,7 @@
 /*   By: rengelbr <rengelbr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/24 13:53:02 by rengelbr          #+#    #+#             */
-/*   Updated: 2019/06/05 11:51:19 by rengelbr         ###   ########.fr       */
+/*   Updated: 2019/06/07 10:31:10 by rengelbr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 	size_t	i;
 
 	str = ft_strnew(len);
+	if (!str || !s)
+		return (NULL);
 	i = 0;
 	s = s + start;
-	if (!str)
-		return (NULL);
 	if (s)
 	{
 		while (i < len)
@@ -31,5 +31,7 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 		}
 		str[i] = '\0';
 	}
+	else
+		return (0);
 	return (str);
 }
