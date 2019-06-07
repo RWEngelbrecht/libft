@@ -6,7 +6,7 @@
 /*   By: rengelbr <rengelbr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 09:53:14 by rengelbr          #+#    #+#             */
-/*   Updated: 2019/06/05 11:50:29 by rengelbr         ###   ########.fr       */
+/*   Updated: 2019/06/07 16:12:15 by rengelbr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@ char	*ft_strtrim(char const *s)
 	int		j;
 
 	i = 0;
-	j = ft_strlen(s) - 1;
 	if (!s)
 		return (NULL);
+	j = ft_strlen(s) - 1;
 	while (ft_iswhitespace(s[i]))
 	{
 		i++;
