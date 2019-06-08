@@ -6,7 +6,7 @@
 /*   By: rengelbr <rengelbr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 12:00:05 by rengelbr          #+#    #+#             */
-/*   Updated: 2019/06/05 12:48:20 by rengelbr         ###   ########.fr       */
+/*   Updated: 2019/06/08 14:49:24 by rengelbr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,6 +71,7 @@ char			**ft_strsplit(char const *s, char c)
 			if (!(arr = (char **)malloc(sizeof(char *))))
 				return (NULL);
 			arr[0] = NULL;
+			arr[1] = "\0";
 			return (arr);
 		}
 	}
