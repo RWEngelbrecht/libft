@@ -6,7 +6,7 @@
 /*   By: rengelbr <rengelbr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 09:53:14 by rengelbr          #+#    #+#             */
-/*   Updated: 2019/06/07 16:12:15 by rengelbr         ###   ########.fr       */
+/*   Updated: 2019/06/09 09:04:45 by rengelbr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,9 +29,7 @@ char	*ft_strtrim(char const *s)
 			return ("");
 	}
 	while (ft_iswhitespace(s[j]))
-	{
 		j--;
-	}
 	trimd = ft_strsub(s, i, (j - i) + 1);
 	return (trimd);
 }
