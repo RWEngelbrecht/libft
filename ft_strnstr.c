@@ -25,7 +25,8 @@ char	*ft_strnstr(const char *stack, const char *needle, size_t len)
 	nd_len = ft_strlen(needle);
 	i = 0;
 	last = 1;
-	while (nd_len <= len && stack[i] != '\0' && (last = ft_strncmp(&stack[i], needle, nd_len)))
+	while (nd_len <= len && stack[i] != '\0' &&
+			(last = ft_strncmp(&stack[i], needle, nd_len)))
 	{
 		len--;
 		i++;
