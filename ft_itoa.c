@@ -6,7 +6,7 @@
 /*   By: rengelbr <rengelbr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 15:17:59 by rengelbr          #+#    #+#             */
-/*   Updated: 2019/06/10 09:34:46 by rengelbr         ###   ########.fr       */
+/*   Updated: 2019/06/10 09:37:35 by rengelbr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ static int		ft_countchars(int n)
 	return (cnt);
 }
 
-char	*ft_itoa(int n)
+char			*ft_itoa(int n)
 {
 	char	*str;
 	int		i;
