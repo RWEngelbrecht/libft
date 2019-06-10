@@ -6,7 +6,7 @@
 /*   By: rengelbr <rengelbr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 12:00:05 by rengelbr          #+#    #+#             */
-/*   Updated: 2019/06/09 11:43:22 by rengelbr         ###   ########.fr       */
+/*   Updated: 2019/06/10 10:38:46 by rengelbr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,60 +24,53 @@ static int		ft_wordcount(char const *str, char c)
 		while (str[i] == c)
 			i++;
 		if (str[i] != c && str[i] != '\0')
-		{
 			count++;
+		while (str[i] != c && str[i] != '\0')
 			i++;
-			while (str[i] != c && str[i] != '\0')
-				i++;
-		}
 	}
 	return (count);
 }
 
-static char		**ft_split(char const *s, char c, char **arr)
+static int		wordlen(char const *str, char c)
 {
-	int		l;
-	int		start;
-	int		i;
+	int	i;
+	int	len;
 
-	l = 0;
-	start = 0;
 	i = 0;
-	while (s[l] != '\0')
+	len = 0;
+	while (str[i] == c)
+		i++;
+	while (str[i] != c && str[i] != '\0')
 	{
-		if (s[l] != c)
-		{
-			start = l;
-			while (s[l] != c && s[l])
-				l++;
-			arr[i++] = ft_strsub(s, start, (l - start));
-		}
-		else
-			while (s[l] == c && s[l])
-				l++;
-		arr[i] = NULL;
+		i++;
+		len++;
 	}
-	return (arr);
+	return (len);
 }
 
 char			**ft_strsplit(char const *s, char c)
 {
+	int		i;
+	int		j;
+	int		k;
 	char	**arr;
 
-	if (!s)
-	{
-		if (c != ' ')
-		{
-			if (!(arr = (char **)malloc(sizeof(char *))))
-				return (NULL);
-			arr[0] = NULL;
-			return (arr);
-		}
-	}
-	else if (!c)
-		return ((char **)ft_strdup(s));
-	if (!(arr = (char **)malloc(sizeof(*arr) * ft_wordcount(s, c) + 1)))
+	if (!s || !(arr = (char **)malloc(sizeof(*arr) *
+		(ft_wordcount(s, c) + 1))))
 		return (NULL);
-	arr = ft_split(s, c, arr);
+	i = -1;
+	j = 0;
+	while (++i < ft_wordcount(s, c))
+	{
+		k = 0;
+		if (!(arr[i] = ft_strnew(wordlen(&s[j], c) + 1)))
+			arr[i] = NULL;
+		while (s[j] == c)
+			j++;
+		while (s[j] != c && s[j])
+			arr[i][k++] = s[j++];
+		arr[i][k] = '\0';
+	}
+	arr[i] = 0;
 	return (arr);
 }
