@@ -6,7 +6,7 @@
 /*   By: rengelbr <rengelbr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 15:17:59 by rengelbr          #+#    #+#             */
-/*   Updated: 2019/06/10 11:23:31 by rengelbr         ###   ########.fr       */
+/*   Updated: 2019/06/10 11:29:32 by rengelbr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,17 +41,14 @@ char			*ft_itoa(int n)
 
 	i = 0;
 	neg = 0;
-	if (!(str = ft_strnew(ft_countchars(n))))
+	if (!(str = ft_strnew(ft_countchars(n) + 1)))
 		return (NULL);
 	if (n <= -2147483648)
 		return (ft_strdup("-2147483648"));
 	if (n == 0)
 		str[i++] = '0';
-	if (n < 0)
-	{
+	if (n < 0 && (n = -n))
 		neg = 1;
-		n = -n;
-	}
 	while (n > 0)
 	{
 		str[i++] = n % 10 + '0';
