@@ -6,7 +6,7 @@
 /*   By: rengelbr <rengelbr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 15:17:59 by rengelbr          #+#    #+#             */
-/*   Updated: 2019/06/10 09:37:35 by rengelbr         ###   ########.fr       */
+/*   Updated: 2019/06/10 11:23:31 by rengelbr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,19 +22,13 @@ static int		ft_countchars(int n)
 	else if (n < 0)
 	{
 		cnt++;
-		while (n < 0)
-		{
+		while (n /= 10)
 			cnt++;
-			n /= 10;
-		}
 	}
 	else
 	{
-		while (n > 0)
-		{
+		while (n /= 10)
 			cnt++;
-			n /= 10;
-		}
 	}
 	return (cnt);
 }
