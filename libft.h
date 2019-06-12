@@ -6,7 +6,7 @@
 /*   By: rengelbr <rengelbr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/04 12:24:17 by rengelbr          #+#    #+#             */
-/*   Updated: 2019/06/10 14:04:13 by rengelbr         ###   ########.fr       */
+/*   Updated: 2019/06/11 16:58:23 by rengelbr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,8 +40,9 @@ char				*ft_strncat(char *s1, const char *s2, size_t n);
 size_t				ft_strlcat(char *dst, const char *src, size_t size);
 char				*ft_strchr(const char *s, int c);
 char				*ft_strrchr(const char *s, int c);
-char				*ft_strstr(const char *stack, const char *needle);
-char				*ft_strnstr(const char *hay, const char *ndl, size_t len);
+char				*ft_strstr(const char *haystack, const char *needle);
+char				*ft_strnstr(const char *haystack, const char *needle,
+					size_t len);
 int					ft_strcmp(const char *s1, const char *s2);
 int					ft_strncmp(const char *s1, const char *s2, size_t n);
 int					ft_atoi(const char *str);
@@ -74,6 +75,9 @@ void				ft_putchar(char c);
 void				ft_putstr(char const *s);
 void				ft_putstr_fd(char const *s, int fd);
 void				ft_putchar_fd(char c, int fd);
+void				ft_putnbr(int n);
+void				ft_putnbr_fd(int n, int fd);
+void				ft_putendl(char const *s);
 int					ft_iswhitespace(int c);
 char				*ft_strrev(char *s);
 t_list				*ft_lstnew(void const *content, size_t content_size);
