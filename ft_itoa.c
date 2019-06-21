@@ -6,24 +6,25 @@
 /*   By: rengelbr <rengelbr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 15:17:59 by rengelbr          #+#    #+#             */
-/*   Updated: 2019/06/10 11:29:32 by rengelbr         ###   ########.fr       */
+/*   Updated: 2019/06/21 11:13:50 by rengelbr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+#include <stdio.h>
 static int		ft_countchars(int n)
 {
 	int		cnt;
 
 	cnt = 0;
 	if (n == 0)
-		cnt++;
+		return (cnt);
 	else if (n < 0)
 	{
 		cnt++;
 		while (n /= 10)
 			cnt++;
+//		printf("%d\n", cnt);
 	}
 	else
 	{
@@ -60,3 +61,18 @@ char			*ft_itoa(int n)
 	ft_strrev(str);
 	return (str);
 }
+
+// int main()
+// {
+// 	int size;
+// 	char *i1;
+//
+// 	i1 = ft_itoa(-5859);
+// 	size = ft_strlen(i1);
+// 	printf("%d\n", size);
+// 	// if (size == 6)
+// 	// 	printf("TEST_SUCCESS");
+// 	// else
+// 	// 	printf("TEST_KO");
+// 	return 0;
+// }
