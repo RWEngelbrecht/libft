@@ -6,7 +6,7 @@
 /*   By: rengelbr <rengelbr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/04 12:24:17 by rengelbr          #+#    #+#             */
-/*   Updated: 2019/06/21 11:18:37 by rengelbr         ###   ########.fr       */
+/*   Updated: 2019/06/21 14:07:27 by rengelbr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,12 +71,13 @@ char				*ft_strtrim(char const *s);
 char				**ft_strsplit(char const *s, char c);
 char				*ft_itoa(int n);
 void				ft_putchar(char c);
+void				ft_putchar_fd(char c, int fd);
 void				ft_putstr(char const *s);
 void				ft_putstr_fd(char const *s, int fd);
-void				ft_putchar_fd(char c, int fd);
 void				ft_putnbr(int n);
 void				ft_putnbr_fd(int n, int fd);
 void				ft_putendl(char const *s);
+void				ft_putendl_fd(char const *s, int fd);
 int					ft_iswhitespace(int c);
 char				*ft_strrev(char *s);
 t_list				*ft_lstnew(void const *content, size_t content_size);
