@@ -6,12 +6,13 @@
 /*   By: rengelbr <rengelbr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/04 12:24:17 by rengelbr          #+#    #+#             */
-/*   Updated: 2019/06/21 14:07:27 by rengelbr         ###   ########.fr       */
+/*   Updated: 2019/07/04 11:25:06 by rengelbr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+# define BUFF_SIZE 1
 # include <string.h>
 # include <unistd.h>
 # include <stdlib.h>
@@ -32,6 +33,7 @@ void				*ft_memchr(const void *s, int c, size_t n);
 int					ft_memcmp(const void *s1, const void *s2, size_t n);
 size_t				ft_strlen(const char *s);
 char				*ft_strdup(const char *s1);
+char				*ft_strndup(const char *s1, size_t n);
 char				*ft_strcpy(char *dst, const char *src);
 char				*ft_strncpy(char *dst, const char *src, size_t len);
 char				*ft_strcat(char *s1, const char *s2);
@@ -80,11 +82,13 @@ void				ft_putendl(char const *s);
 void				ft_putendl_fd(char const *s, int fd);
 int					ft_iswhitespace(int c);
 char				*ft_strrev(char *s);
+int					ft_wordcount(char const *str, char c);
 t_list				*ft_lstnew(void const *content, size_t content_size);
 void				ft_lstdelone(t_list **alst, void (*del)(void*, size_t));
 void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+int					get_next_line(const int fd, char **line);
 
 #endif
