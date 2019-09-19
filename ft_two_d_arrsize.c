@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int		two_d_arrsize(char **arr)
+int		ft_two_d_arrsize(char **arr)
 {
 	int	i;
 
